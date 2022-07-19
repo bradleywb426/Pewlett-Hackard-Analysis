@@ -17,11 +17,27 @@ Analysing Data from Pewlett Hackard to find out which employees are eligible for
 
 ## Overview
 
-We have been tasked with determining the number of employees per title that are retiring, as well as find employees that are eligible to participate in mentoring other staff members.
+In preperation for a wave of retirements, we have been tasked with determining the number of employees per title that are retiring. From there, we also determined the number of employees eligible to shift to part time work while mentoring other employees.
 
 ## Results
 
+| Number of Employees   | Title  |
+| :-------------------: | -----  |
+| 25,916 	|  Senior Engineer     |
+| 24,926  |  Senior Staff        |
+| 9,285   |  Engineer            |
+| 7,636   |  Staff               |
+| 3,603   |  Technique Leader    |
+| 1,090   |  Assistant Engineer  |
+| 2       |  Manager             |
+
+- Number of Employees Retiring by Title
+  - Looking at the table above, we can see that majority of the retiring employees (a total of 50,842 employees) are Senior-level staff 
+  - 
+
 Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+
+- Employees Eligible for the Mentorship program
 
 ## Summary 
 
@@ -30,10 +46,6 @@ How many roles will need to be filled as the "silver tsunami" begins to make an 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 --------------
-
-## Overview
-
-V. Isualize has tasked us with analyzing the relationship between city types and how Pyber usage differs amongst the city types. First, we had to create and provide a Dataframe for our analysis, and then make a line plot illustrating the differences.
 
 ## Results
 
