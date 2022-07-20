@@ -32,59 +32,31 @@ In preperation for a wave of retirements, we have been tasked with determining t
 | 2       |  Manager             |
 
 - Number of Employees Retiring by Title
-  - Looking at the table above, we can see that majority of the retiring employees (a total of 50,842 employees) are Senior-level staff 
-  - 
+  - Out of the 72,458 total employees eligible for retirement, majority of the employees are Senior-level staff (50,842 employees or 70.17%)
+  - 68,853 retirement eligible employees are Engineers and Staff, which makes up 95.02% of the retiring employees
 
-Provide a bulleted list with four major points from the two analysis deliverables. Use images as support where needed.
+[Link to the Mentorship Program Employee list](https://github.com/bradleywb426/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibility.csv)
 
-- Employees Eligible for the Mentorship program
+- Employees Eligible for the Mentorship Program
+  - Of the 1549 employees eligible for the mentorship-program, 1026 employees (or 66.24%) have had their position since the 1990's, meaning they've had the position for 20 to 30 years
+  - Engineers make up 74.11%, which is 1,148 employees, of the employees eligible for the mentorship-program
 
 ## Summary 
 
+### How many roles will need to be filled?
+
+By the end of this wave of retirement, 72,458 positions will need to be filled full-time due to retirements. An additional 1,549 positions will be requiring at least part-time fulfillment as current retirement-eligible employees agree to shift to mentor roles, assuming all employees eligible for the mentorship program agree to participate.
+
+### Are there enough employees to mentor the next generation of Pewlett Hackard employees?
+
+No, there are not enough potential mentors to foster the new employees. As it stands, each mentor would have approximately 47 students to be responsible for, which is too high of a margin.
+
 Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
---------------
+### Further Queries
 
-## Results
+To better gauge the effect of the upcoming retirement wave:
 
-The first aspect of our Pyber Analysis involved creating a DataFrame of Pyber data (Total Rides, Total Drivers, Total Fares, Average Fare per Ride, Average Fare per Driver) that was grouped by different city types (Rural, Suburban, and Urban). The DataFrame is listed below, and contains the data discussed below.
+- The breakdown of retiring employees by birth year can be insightful, as it can help show if more employees are likely to retire at the start, end, middle, or spread throughout the wave. Knowing this can inform how to hire the new employees and if it would be possible to have mentors train new hires in multiple rounds. This would increase the number of mentored hires while keeping the number of new hires lower for mentors at a given time.
 
-<img src="">
-
-### Total Rides
-
-  There are a total of 125 rides in Rural-type cities, which is the smallest total number of rides of all city types. Suburban cities have 625 rides total, which is 5 times as many rides as in Rural-type cities. Urban-type cities have a total of 1,625 rides, which is 13 times as many rides in Rural-type cities and 2.6 times as many rides as Suburban-type cities. Therefore, Urban-type cities have the most total rides. 
-
-### Total Drivers
-
-  In Rural-type cities, there are a total of 78 drivers, which is the smallest number of drivers of all city types. For Suburban-type cities, there are a total of 490 drivers, which is about 6.3 times as many drivers as Rural-type cities. Urban cities have a a total of 2,405 drivers, which is about 30.8 times as many drivers as Rural-type cities and about 4.9 times as many drivers as Suburban-type cities. Therefore, Urban-type cities have the largest total number of drivers.
-
-### Total Fares
-
-  Rural cities have the lowest total fares, with a total of $4,327.93 in total fares. In Suburban-type cities, the total fare is $19,356.33, which is around 4.5 times greater than total fares in Rural cities. Urban-type cities have a total of $39,854.38 in fares, which is about 2.1 times the total fares for Suburban cities and about 9.2 times the total fares of Rural cities. Therefore, Urban-type cities have the largest total fares.
-
-### Total Fares (Monthly)
-
-The total fares for each city type can also be observed as monthly totals for each city type till the end of April, as seen in the line plot below. From the plot, it can be seen that total fares in Urban cities are always the greatest, total fares in Suburban cities are always less than Urban and greater than Rural, and Rural cities always have the smallest monthly totals. It can also be seen that the monthly total fares by city type exist in distinct bands, meaning that there is no overlap between the minimums and maximums of monthly totals by city type. Rural cities appear to have relatively consistent total monthly fares, while Suburban cities appear to have maximums and minimums over the course of around 4 weeks. Urban cities appear to dip in the colder winter months, and slowly increase as it approaches summer.
-
-<img src="">
-
-### Average Fare per Ride
-
-Urban-type cities have $24.53 average fare per ride, which is the lowest average fare per ride out of all city types. For Suburban cities, the average fare per ride is $30.97, which is about 1.26 times the average fare for Urban cities. Rural cities have an average fare of $34.62 per ride, which is about 1.41 times the average fare per ride in Urban cities and about 1.12 times the average fare per ride for Suburban cities. Therefore, Rural-type cities have the greatest average fare per ride out of all city types.
-
-### Average Fare per Driver
-
-Urban cities have an average fare per driver of $16.57, which is the lowest average fare per driver. Suburban-type cities have an average fare of $39.50 per driver, which is about 2.38 times the Urban average. Rural cities have $55.49 average fare per driver, which is about 1.40 times the Suburban average and 3.35 times the Urban average. Therefore, Rural-type cities have the highest average fare per driver.
-
-## Summary
-
-Based on the above results, some business recommendations can be made to address disparites amongst city types:
-
-- To raise total fares for Rural cities, riders will need to be further incentivised to use Pyber. Therefore, there will likely need to be both a decrease in ride fares and an increase in the number of drivers. A more affordable and reliable transportation service will draw in more users and increase profits.
-
-- Suburban cities require a similar change as Rural cities, though to a lesser degree. They will likely require only either a slight decrease in ride fares or a small increase in drivers. 
-
-- Urban cities would most likely benefit from increased incentives to using Pyber, as there are currently more drivers than riders. Given the already low average far per ride, these incentives will likely have to come in some form other than a decrease in ride shares.
+- Looking at the breakdown by department, such as in the [retirements by department table](https://github.com/bradleywb426/Pewlett-Hackard-Analysis/blob/main/Data/dept_retire.csv), can give insight into what departments will be hit the hardest and where to focus hiring efforts on. This could then be further utilized by applying the previous query (retirements by year) with retirements by department to see approximately when each department will be hit and how severe. This can allow for a far more dynamic hiring and mentoring strategy.
